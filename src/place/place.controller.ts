@@ -7,7 +7,6 @@ import {
   Param,
   Delete,
 } from '@nestjs/common';
-import { Prisma } from '@prisma/client';
 import { CreatePlaceDto } from 'src/place/dto/create-place.dto';
 import { PlaceService } from './place.service';
 
@@ -32,10 +31,7 @@ export class PlaceController {
   }
 
   @Patch(':id')
-  update(
-    @Param('id') id: string,
-    @Body() updatePlaceDto: Prisma.PlaceUpdateInput,
-  ) {
+  update(@Param('id') id: string, @Body() updatePlaceDto: any) {
     return this.placeService.update(+id, updatePlaceDto);
   }
 
