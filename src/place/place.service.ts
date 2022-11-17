@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import { Prisma } from '@prisma/client';
 import { FilesService } from 'src/files/files.service';
 import { CreatePlaceDto } from 'src/place/dto/create-place.dto';
 import { Place } from 'src/place/place.model';
@@ -36,7 +35,7 @@ export class PlaceService {
     return this.placeModel.findOne({ where: { id } });
   }
 
-  update(id: number, updatePlaceDto: Prisma.PlaceUpdateInput) {
+  update(id: number, updatePlaceDto: any) {
     const find = this.findOne(id);
 
     if (find) {
