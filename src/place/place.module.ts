@@ -6,10 +6,7 @@ import { PlaceController } from './place.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
-  imports: [
-    MongooseModule.forFeature([{ name: 'Place', schema: PlaceSchema }]),
-    FilesModule,
-  ],
+  imports: [],
   controllers: [],
   providers: [],
 })
