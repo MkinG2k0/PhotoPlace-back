@@ -6,8 +6,11 @@ import { PlaceController } from './place.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
-  imports: [],
-  controllers: [],
-  providers: [],
+  imports: [
+    // MongooseModule.forFeature([{ name: 'Place', schema: PlaceSchema }]),
+    FilesModule,
+  ],
+  controllers: [PlaceController],
+  providers: [PlaceService],
 })
 export class PlaceModule {}
