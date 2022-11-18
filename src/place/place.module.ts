@@ -8,7 +8,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 @Module({
   imports: [
     // MongooseModule.forFeature([{ name: 'Place', schema: PlaceSchema }]),
-    FilesModule,
+    // FilesModule,
   ],
   controllers: [PlaceController],
   providers: [PlaceService],
