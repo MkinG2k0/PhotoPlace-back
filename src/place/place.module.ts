@@ -10,7 +10,7 @@ import { MongooseModule } from '@nestjs/mongoose';
     // MongooseModule.forFeature([{ name: 'Place', schema: PlaceSchema }]),
     // FilesModule,
   ],
-  controllers: [PlaceController],
+  controllers: [],
   providers: [PlaceService],
 })
 export class PlaceModule {}
