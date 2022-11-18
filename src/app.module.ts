@@ -11,9 +11,9 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     UserModule,
-    // MongooseModule.forRoot(
-    //   'mongodb+srv://mking:mking2000@cluster0.lwywdhj.mongodb.net/?retryWrites=true&w=majority',
-    // ),
+    MongooseModule.forRoot(
+      'mongodb+srv://mking:mking2000@cluster0.lwywdhj.mongodb.net/?retryWrites=true&w=majority',
+    ),
     // PlaceModule,
     // AuthModule,
   ],
