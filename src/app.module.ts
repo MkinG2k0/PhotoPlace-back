@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+import { GoogleStrategy } from 'src/google.strategy';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { PlaceModule } from './place/place.module';
@@ -18,6 +19,6 @@ import { ConfigModule } from '@nestjs/config';
     AuthModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, GoogleStrategy],
 })
 export class AppModule {}
