@@ -6,6 +6,6 @@ import { AuthController } from './auth.controller';
 @Module({
   imports: [],
   controllers: [AuthController],
-  providers: [AuthService, GoogleStrategy],
+  providers: [AuthService],
 })
 export class AuthModule {}

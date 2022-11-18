@@ -15,10 +15,10 @@ import { ConfigModule } from '@nestjs/config';
     MongooseModule.forRoot(
       'mongodb+srv://mking:mking2000@cluster0.lwywdhj.mongodb.net/?retryWrites=true&w=majority',
     ),
-    // PlaceModule,
+    PlaceModule,
     AuthModule,
   ],
   controllers: [AppController],
-  providers: [AppService, GoogleStrategy],
+  providers: [AppService],
 })
 export class AppModule {}
