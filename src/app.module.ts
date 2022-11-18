@@ -14,8 +14,8 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
     MongooseModule.forRoot(
       'mongodb+srv://mking:mking2000@cluster0.lwywdhj.mongodb.net/?retryWrites=true&w=majority',
     ),
-    PlaceModule,
-    // AuthModule,
+    // PlaceModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
